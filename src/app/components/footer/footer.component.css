@@ -1,0 +1,23 @@
+.stats {
+  background-color: #76c7ad;
+  text-align: center;
+  font-weight: 700;
+  padding: 3.2rem 0;
+}
+
+.form {
+  padding-inline: 48rem;
+  background-color: #e5771f;
+  padding: 2.8rem 4.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+@media (max-width: 35em) {
+  .stats p {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,20 @@
+<div class="list">
+  <ul>
+    <li *ngFor="let item of items">
+      <input
+        [checked]="item.packed"
+        type="checkbox"
+        (change)="toggleItem(item.id)"
+      />
+      <span [ngClass]="item.packed ? 'line-through' : ''">
+        {{ item.quantity }} {{ item.description }}
+      </span>
+
+      <button (click)="deleteItem(item.id)">❌</button>
+    </li>
+  </ul>
+
+  <div class="actions">
+    <button (click)="clearList()">Clear list</button>
+  </div>
+</div>

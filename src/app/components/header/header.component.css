@@ -1,0 +1,20 @@
+header {
+  background-color: red;
+}
+
+.logo {
+  text-align: center;
+  background-color: #f4a226;
+  font-family: "Monoton";
+  font-size: 6.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  word-spacing: 30px;
+  letter-spacing: -5px;
+}
+
+@media (max-width: 35em) {
+  .logo {
+    font-size: 4.8rem;
+  }
+}

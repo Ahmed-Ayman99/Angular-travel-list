@@ -1,0 +1,16 @@
+<div class="form">
+  <h3>What do you need for your 😍 trip?</h3>
+
+  <select [(ngModel)]="quantity">
+    <option
+      *ngFor="let i of selectionLength; let ind = index"
+      [value]="ind + 1"
+    >
+      {{ ind + 1 }}
+    </option>
+  </select>
+
+  <input [(ngModel)]="description" type="text" placeholder="Item..." />
+
+  <button (click)="clickBtn()">Add</button>
+</div>
